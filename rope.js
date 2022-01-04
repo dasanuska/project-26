@@ -5,7 +5,7 @@ class rope{
 			bodyA:body1,
 			bodyB:body2
 		}
-
+		
 		this.rope=Constraint.create(options)
 		World.add(world,this.rope)
 
@@ -19,9 +19,12 @@ class rope{
 
 		strokeWeight(2);
 
-		//WRITE THE CORRECT CODE TO RENDER A LINE BETWEEN THE TWO BODIES
+		//CHOOSE THE CORRECT OPTION TO RENDER A LINE BETWEEN THE TWO BODIES
 
-		
+		// line(pointA.x, pointA.y, pointB.y);
+		 line(pointA.x, pointA.y, pointB.x + this.offsetX, pointB.y);
+		// line(pointA.x, pointA.y, pointB.x + this.offsetX);
+		// line(pointA.x, pointA.y + this.offsetX, pointB.x, pointB.y);
 	}
 
 }
